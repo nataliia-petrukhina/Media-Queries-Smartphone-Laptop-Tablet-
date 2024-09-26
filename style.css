@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 100px;
+}
+
+h2 {
+  display: none;
+}
+/* Kleinere Geräte 0-480 - sehr kleines Smartphone */
+@media (min-width: 0px) and (max-width: 480px) {
+  header {
+    background-color: gold;
+  }
+  h1 {
+    color: blue;
+  }
+
+  p {
+    color: red;
+  }
+}
+
+/* Kleine Geräte 481-768px - Smartphone */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    background-color: green;
+  }
+
+  .smartphone {
+    display: block;
+  }
+
+  .inhalt {
+    width: 100%;
+    height: 75vh;
+    background-image: url("https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+    background-size: cover;
+  }
+}
+
+/* Mittelgroße Geräte 769-993 - Tablet */
+@media (min-width: 769px) and (max-width: 993px) {
+    header {
+      background-color: tomato;
+    }
+  
+    .tablet {
+    display: block;
+    }
+  
+    .inhalt {
+      width: 100%;
+      height: 75vh;
+      background-image: url("https://images.pexels.com/photos/3785868/pexels-photo-3785868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+/* Große Geräte 994-1200 - Laptop */
+
+@media (min-width: 994px) and (max-width: 1200px) {
+    header {
+      background-color: orange;
+      color: black;
+    }
+  
+    .laptop {
+    display: block;
+    }
+  
+    .inhalt {
+      width: 100%;
+      height: 75vh;
+      background-image: url("https://images.pexels.com/photos/1297611/pexels-photo-1297611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+/* Extra große Geräte 1201 und mehr - Monitor */
+@media (min-width: 1201px)  {
+    header {
+      background-color: blueviolet;
+    }
+  
+  
+    .inhalt {
+      width: 100%;
+      height: 75vh;
+      background-image: url("https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      background-position: center;
+    }
+  }
